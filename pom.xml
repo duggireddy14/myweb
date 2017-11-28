@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>in.javahome</groupId>
-	<artifactId>myweb</artifactId>
+	<groupId>in.javahome.groupId</groupId>
+	<artifactId>myweb-arti</artifactId>
 	<packaging>war</packaging>
 	<!-- Demo-->
 	<version>0.7.0-SNAPSHOT</version>
@@ -40,19 +40,20 @@
 	</dependencies>
 	
 	<distributionManagement>
-		<repository>
-			<id>nexus</id>
-			<name>Releases</name>
-			<url>http://192.168.70.1:32768/repository/maven-releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus</id>
-			<name>Snapshot</name>
-			<url>http://192.168.70.1:32768/repository/maven-snapshots/</url>
-		</snapshotRepository>
-  	</distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>InternalReleases</name>
+            <url>http://52.87.164.99:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://52.87.164.99:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement> 
+
 	<build>
-		<finalName>myweb</finalName>
+		<finalName>myweb-bala</finalName>
 		<plugins>
 		<!-- <plugin>
 			<groupId>org.jacoco</groupId>
