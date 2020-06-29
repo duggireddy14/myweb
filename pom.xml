@@ -53,7 +53,7 @@
     </distributionManagement> 
 
 	<build>
-		<finalName>myweb-bala</finalName>
+		<finalName>myweb-dvn</finalName>
 		<plugins>
 		<!-- <plugin>
 			<groupId>org.jacoco</groupId>
